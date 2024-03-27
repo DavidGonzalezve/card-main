@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root{
+    
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+--Yellow: hsl(47, 88%, 63%);
+--Font-size-paragraph: 16px;
+}
+
+body{
+    background-color: var(--Yellow);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.container-card{
+    background-color: white;
+    width: 375px;
+    height: 550px;
+    margin: auto; 
+    align-items: center;  
+    border-radius: 20px; 
+    box-shadow: 10px 10px;
+}
+
+
+.container-card .header{
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+
+.box-content{
+    margin: auto;
+    width: 90%;
+    margin-top: 15px;
+}
+
+h3{
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--Yellow);
+    font-weight: 800;
+}
+
+.box-content .publicacion{
+    font-weight: 600;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+p{
+    margin-top: 20px;
+    color: var(--Grey);
+}
+
+.box-profile{
+    width: max-content;
+    display: flex;
+    height: 70px;
+    margin: 40px 0px 0px 0px;
+    
+
+    
+}
+.box-profile img{
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;   
+}
+
+@media screen and (width < 400px){
+    .container-card{
+        width: 90%;
+        transform: scale(0.95);
+    }
+    
+}
